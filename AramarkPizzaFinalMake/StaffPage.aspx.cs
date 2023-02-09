@@ -27,6 +27,8 @@ namespace AramarkPizzaFinalMake
             Session["Password"] = "";
 
             Session["Logged"] = "No";
+
+            Response.Redirect("Default.aspx");
         }
 
     }

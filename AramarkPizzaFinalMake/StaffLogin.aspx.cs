@@ -11,7 +11,12 @@ namespace AramarkPizzaFinalMake
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string LoggedIn = Session["Logged"].ToString();
 
+            if (LoggedIn == "Yes")
+            {
+                Response.Redirect("StaffPage.aspx");
+            }
         }
 
         protected void loginButton_Click(object sender, EventArgs e)
@@ -20,21 +25,26 @@ namespace AramarkPizzaFinalMake
                 string username = usernameTextBox.Text;
                 string password = passwordTextBox.Text;
 
-                using (PizzaInfoEntities3 db = new PizzaInfoEntities3())
-                {
-                    var staff = db.StaffLogins.Where(s => s.Username == username && s.Password == password).FirstOrDefault();
-                    if (staff != null)
-                    {
-                        Session["Logged"] = "Yes";
-                        Session["Username"] = staff.Username;
-                        Session["Password"] = staff.Password;
-                        Response.Redirect("StaffPage.aspx");
-                    }
-                    else
-                    {
-                        lblError.Text = "Username or password is incorrect. Please try again or contact administration.";
-                    }
-                }
+
+
+
+                 using (PizzaInfoEntities3 db = new PizzaInfoEntities3())
+                 {
+                     var staff = db.StaffLogins.Where(s => s.Username == username && s.Password == password).FirstOrDefault();
+                     if (staff != null)
+                     {
+                         Session["Logged"] = "Yes";
+                         Session["Username"] = staff.Username;
+                         Session["Password"] = staff.Password;
+                         Response.Redirect("StaffPage.aspx");
+                     }
+                     else
+                     {
+                         lblError.Text = "Username or password is incorrect. Please try again or contact administration.";
+                     }
+                 }
+
+                
             }
         }
     }
