@@ -18,7 +18,7 @@ namespace AramarkPizzaFinalMake
             {
                 int id = (int)Session["ID"];
 
-                using (PizzaInfoEntities2 context = new PizzaInfoEntities2())
+                using (PizzaInfoEntities3 context = new PizzaInfoEntities3())
                 {
                     Customer order = context.Customers.Find(id);
 

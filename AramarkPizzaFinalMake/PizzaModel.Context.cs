@@ -13,10 +13,10 @@ namespace AramarkPizzaFinalMake
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PizzaInfoEntities2 : DbContext
+    public partial class PizzaInfoEntities3 : DbContext
     {
-        public PizzaInfoEntities2()
-            : base("name=PizzaInfoEntities2")
+        public PizzaInfoEntities3()
+            : base("name=PizzaInfoEntities3")
         {
         }
     

@@ -20,6 +20,13 @@ namespace AramarkPizzaFinalMake
             Session["ID"] = null;
 
             Session["Price"] = null;
+
+            Session["Username"] = "";
+
+            Session["Password"] = "";
+
+            Session["Logged"] = "No";
+
         }
     }
 }

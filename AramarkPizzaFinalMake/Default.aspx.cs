@@ -18,7 +18,7 @@ namespace AramarkPizzaFinalMake
         {
 
             string PhoneNumber = phoneNumberTextBox.ToString();
-            PizzaInfoEntities2 db = new PizzaInfoEntities2();
+            PizzaInfoEntities3 db = new PizzaInfoEntities3();
             var dbCustomers = db.Customers;
 
             var newCustomer = new Customer();

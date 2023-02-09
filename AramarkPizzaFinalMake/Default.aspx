@@ -67,11 +67,11 @@
                 <label for="pizzaDropDownList">Pizza:</label>
                 <asp:DropDownList ID="pizzaDropDownList" runat="server">
                     <asp:ListItem>Select a Pizza</asp:ListItem>
-                    <asp:ListItem>Pizza 1</asp:ListItem>
-                    <asp:ListItem>Pizza 2</asp:ListItem>
-                    <asp:ListItem>Pizza 3</asp:ListItem>
-                    <asp:ListItem>Pizza 4</asp:ListItem>
-                    <asp:ListItem>Pizza 5</asp:ListItem>
+                    <asp:ListItem>Margherita</asp:ListItem>
+                    <asp:ListItem>Pepperoni</asp:ListItem>
+                    <asp:ListItem>Vegetarian</asp:ListItem>
+                    <asp:ListItem>BBQ Chicken</asp:ListItem>
+                    <asp:ListItem>Seafood</asp:ListItem>
                 </asp:DropDownList>
             </div>
             <div class="form-element">
