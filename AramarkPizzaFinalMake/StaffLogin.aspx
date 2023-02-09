@@ -59,7 +59,7 @@
             </div>
             <div>
                 <asp:Label ID="passwordLabel" runat="server" Text="Password: " />
-                &nbsp;<asp:TextBox ID="passwordTextBox" runat="server" CssClass="form-control" TextMode="MultiLine" />
+                &nbsp;<asp:TextBox ID="passwordTextBox" runat="server" CssClass="form-control" TextMode="Password" />
             </div>
             <div>
                 <asp:Button ID="loginButton" runat="server" Text="Login" CssClass="btn" OnClick="loginButton_Click" />
